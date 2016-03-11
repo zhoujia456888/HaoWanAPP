@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">好玩APP</string>
+    <string name="welcome_hint">就是好玩，不需要理由</string>
+    <string name="neterror">网络错误</string>
+    <string name="neterrorinfo">检测到你目前尚未链接网络</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="end">完成</string>
+    <string name="search">搜索</string>
+    <string name="add">添加</string>
+    <string name="settings">设置</string>
+
+    <string name="sign_in">登陆</string>
+    <string name="weather_page">天气</string>
+    <string name="joke_page">笑话</string>
+    <string name="beauty_page">美女</string>
+
+    <!--用户详情-->
+    <string name="userdatailinfo">用户详情</string>
+    <string name="personal_nickname">昵称</string>
+    <string name="personal_realname">姓名</string>
+    <string name="personal_sex">性别</string>
+    <string name="personal_phone">电话</string>
+    <string name="personal_birth">出生日期</string>
+    <string name="personal_residcity">居住城市</string>
+    <string name="change_nickname">修改昵称</string>
+    <string name="edit_nickname">请填写用户昵称</string>
+    <string name="edit_nickname_2">请填写新的用户昵称</string>
+    <string name="change_realname">修改真实姓名</string>
+    <string name="edit_realname">请填写真实姓名</string>
+    <string name="edit_realname_2">请填写新的真实姓名</string>
+    <string name="edit_phone">手机号码</string>
+    <string name="edit_phone2">请填写手机号码</string>
+    <string name="select_city">选择城市</string>
+
+    <string name="setting">设置</string>
+
+</resources>

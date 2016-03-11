@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="nliveo_black">#000000</color>
+    <color name="nliveo_black_light">#222222</color>
+    <color name="nliveo_blue_alpha_colorPrimaryDark">#801976D2</color>
+    <color name="nliveo_blue_colorAccent">#03A9F4</color>
+    <color name="nliveo_blue_colorPrimary">#2196F3</color>
+    <color name="nliveo_blue_colorPrimaryDark">#1976D2</color>
+    <color name="nliveo_blue_gray_alpha_colorPrimaryDark">#80455A64</color>
+    <color name="nliveo_blue_gray_colorPrimary">#607D8B</color>
+    <color name="nliveo_blue_gray_colorPrimaryDark">#80455A64</color>
+    <color name="nliveo_brown_alpha_colorPrimaryDark">#805D4037</color>
+    <color name="nliveo_brown_colorPrimary">#795548</color>
+    <color name="nliveo_brown_colorPrimaryDark">#5D4037</color>
+    <color name="nliveo_cyan_alpha_colorPrimaryDark">#800097A7</color>
+    <color name="nliveo_cyan_colorPrimary">#00BCD4</color>
+    <color name="nliveo_cyan_colorPrimaryDark">#0097A7</color>
+    <color name="nliveo_gray">#e0e0e0</color>
+    <color name="nliveo_green_alpha_colorPrimaryDark">#80388E3C</color>
+    <color name="nliveo_green_colorAccent">#8BC34A</color>
+    <color name="nliveo_green_colorPrimary">#4CAF50</color>
+    <color name="nliveo_green_colorPrimaryDark">#388E3C</color>
+    <color name="nliveo_indigo_alpha_colorPrimaryDark">#8030379F</color>
+    <color name="nliveo_indigo_colorPrimary">#3F51B5</color>
+    <color name="nliveo_indigo_colorPrimaryDark">#30379F</color>
+    <color name="nliveo_lime_alpha_colorPrimaryDark">#80AFB42B</color>
+    <color name="nliveo_lime_colorPrimary">#CDDC39</color>
+    <color name="nliveo_lime_colorPrimaryDark">#AFB42B</color>
+    <color name="nliveo_orange_alpha_colorPrimaryDark">#80F57C00</color>
+    <color name="nliveo_orange_colorPrimary">#FF9800</color>
+    <color name="nliveo_orange_colorPrimaryDark">#F57C00</color>
+    <color name="nliveo_purple_alpha_colorPrimaryDark">#80512DA8</color>
+    <color name="nliveo_purple_colorPrimary">#673AB7</color>
+    <color name="nliveo_purple_colorPrimaryDark">#512DA8</color>
+    <color name="nliveo_red_alpha_colorPrimaryDark">#80D32F2F</color>
+    <color name="nliveo_red_colorPrimary">#F44336</color>
+    <color name="nliveo_red_colorPrimaryDark">#D32F2F</color>
+    <color name="nliveo_teal_alpha_colorPrimaryDark">#8000796B</color>
+    <color name="nliveo_teal_colorPrimary">#009688</color>
+    <color name="nliveo_teal_colorPrimaryDark">#00796B</color>
+    <color name="nliveo_transparent">#00000000</color>
+    <color name="nliveo_white">#ffffff</color>
+    <dimen name="default_textSize">14sp</dimen>
+    <dimen name="drawer_layout_width">260dp</dimen>
+    <dimen name="userBackground_layout_height">164dp</dimen>
+    <dimen name="userData_layout_height">56dp</dimen>
+    <dimen name="userData_layout_marginBottom">8dp</dimen>
+    <dimen name="userEmail_layout_marginLeft">16dp</dimen>
+    <dimen name="userEmail_textSize">14sp</dimen>
+    <dimen name="userName_layout_marginLeft">16dp</dimen>
+    <dimen name="userName_textSize">14sp</dimen>
+    <dimen name="userPhotoTree_layout_height">40dp</dimen>
+    <dimen name="userPhotoTree_layout_marginRight">16dp</dimen>
+    <dimen name="userPhotoTree_layout_width">40dp</dimen>
+    <dimen name="userPhotoTwo_layout_height">40dp</dimen>
+    <dimen name="userPhotoTwo_layout_marginRight">16dp</dimen>
+    <dimen name="userPhotoTwo_layout_width">40dp</dimen>
+    <dimen name="userPhoto_layout_height">64dp</dimen>
+    <dimen name="userPhoto_layout_marginLeft">16dp</dimen>
+    <dimen name="userPhoto_layout_marginTop">16dp</dimen>
+    <dimen name="userPhoto_layout_width">64dp</dimen>
+    <string name="clear">""</string>
+    <string name="custom_header_not_created">Custom header was not created</string>
+    <string name="drawer_close">Navigation drawer Close</string>
+    <string name="drawer_open">Open drawer navigation</string>
+    <string name="enter_item_name_position">Enter the item name position </string>
+    <string name="header_not_created">Header was not created</string>
+    <string name="list_hide_item">The list is empty or has not been created</string>
+    <string name="list_null_or_empty">List of null or empty names. Solution: mListNameItem = new ArrayList &lt;> (); mListNameItem.add (position, R.string.name);</string>
+    <string name="remove_selector_navigation">The option to remove the select is active. Please remove the removeSelectorNavigation method so you can use the setNewSelectorNavigation</string>
+    <string name="start_navigation_listener">You must start the .build(); in onInit() from your main Activity.</string>
+    <string name="title_null_or_empty">The title can not be null or empty</string>
+    <string name="value_icon_should_be_0">The value of the icon for a subHeader item should be 0</string>
+    <style name="AppTheme.nLiveo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/nliveo_blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_blue_alpha_colorPrimaryDark</item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="Theme.nLiveo" parent="AppTheme.nLiveo"/>
+</resources>

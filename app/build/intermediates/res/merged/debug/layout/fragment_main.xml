@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:id="@+id/rotate_header_web_view_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cube_mints_f1f1f1"
+        app:ptr_duration_to_close="200"
+        app:ptr_duration_to_close_header="1000"
+        app:ptr_keep_header_when_refresh="true"
+        app:ptr_pull_to_fresh="false"
+        app:ptr_ratio_of_header_height_to_refresh="1.2"
+        app:ptr_resistance="1.7">
+
+        <ScrollView
+            android:id="@+id/weather_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="24dp">
+
+                    <ImageView
+                        android:id="@+id/img_weathr"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@mipmap/sunny" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|right"
+                        android:orientation="vertical"
+                        android:paddingRight="50dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_weather_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="城市"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/weather_deta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="晴"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="20dp" />
+
+                            <TextView
+                                android:id="@+id/weather_temperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:text="20℃"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/layout_aqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="空气质量:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_aqiqlty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="优"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PM2.5:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_aqipm25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7 ug/m3"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="体感温度:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_send_temp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null ℃"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="相对湿度:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_humidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null %"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="降水量:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_precipitation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null mm"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="气压:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_pressure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="能见度:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_seeing"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null km"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="风向:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_wind_direction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="东风"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="风力:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_wind_power"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null 级"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="风速:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:id="@+id/txt_wind_speed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null kmph"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <cn.zhoujia.haowanapp.Activity.selectcity.MyGridView
+                            android:id="@+id/grid_hourly_forecast"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:stretchMode="spacingWidthUniform" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <cn.zhoujia.haowanapp.Activity.selectcity.MyGridView
+                            android:id="@+id/grid_daily_forecast"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:paddingLeft="24dp"
+                            android:paddingRight="24dp"
+                            android:stretchMode="spacingWidthUniform" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="24dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="舒适度指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_comfbrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="较不舒适"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_comftxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="白天天气多云，同时会感到有些热，不很舒适。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="洗车指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_cwbrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="较适宜"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_cwtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="穿衣指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_drsgbrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="舒适"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_drsgtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="运动指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_sportbrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="较适宜"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_sporttxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天气较好，赶快投身大自然参与户外运动，尽情感受运动的快乐吧。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="感冒指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_flubrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="少发"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_flutxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="各项气象条件适宜，无明显降温过程，发生感冒机率较低。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="24dp"
+                        android:paddingRight="24dp"
+                        android:paddingTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="旅游指数:"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/txt_travbrf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="适宜"
+                                android:textColor="@color/nliveo_black"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_travtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="天气较好，但丝毫不会影响您出行的心情。温度适宜又有微风相伴，适宜旅游。"
+                            android:textColor="@color/nliveo_black"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+</LinearLayout>

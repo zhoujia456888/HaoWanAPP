@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="preference_values">
+        <item>Twitter</item>
+        <item>Google</item>
+        <item>Instagram</item>
+        <item>Facebook</item>
+    </string-array>
+
+    <string-array name="usecontr_additem">
+        <item>添加设备</item>
+        <item>添加设备到常用</item>
+        <item>WIFI配置</item>
+    </string-array>
+
+    <string-array name="classify_additem">
+        <!--<item>手动添加新设备</item>-->
+        <item>自动搜索新设备</item>
+        <item>WIFI配置</item>
+    </string-array>
+
+    <string-array name="roomcontr_additem">
+        <item>添加设备到该房间</item>
+        <item>WIFI配置</item>
+    </string-array>
+
+    <string-array name="user_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="take_phone">
+        <item>拍照</item>
+        <item>从相册选择</item>
+        <item>查看大头像</item>
+    </string-array>
+
+    <string-array name="room_longclick">
+        <item>重命名</item>
+        <item>删除房间</item>
+    </string-array>
+
+    <string-array name="take_roomphone">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </string-array>
+
+    <string-array name="devices_type">
+        <item>单键开关</item>
+        <item>双键开关</item>
+        <item>三键开关</item>
+        <item>调光开关</item>
+    </string-array>
+
+    <string-array name="share_joke">
+        <item>分享</item>
+        <item>复制内容到剪切板</item>
+    </string-array>
+
+    <array name="custom_colors">
+        <item>#F44336</item>
+        <item>#E91E63</item>
+        <item>#9C27B0</item>
+        <item>#673AB7</item>
+        <item>#3F51B5</item>
+        <item>#2196F3</item>
+    </array>
+
+</resources>
