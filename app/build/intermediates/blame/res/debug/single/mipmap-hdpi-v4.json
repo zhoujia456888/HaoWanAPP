@@ -12,16 +12,16 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_search_white_24dp.png"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_liveo.png",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_liveo.png"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\sunny.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\sunny.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\iconfont_downgrey.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\iconfont_downgrey.png"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\sunny.png",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\sunny.png"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_liveo.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_liveo.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_no_user.png",
@@ -48,12 +48,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_add_white_24dp.png"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ios_thumb.png",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ios_thumb.png"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_launcher.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ios_thumb.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ios_thumb.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_star_black_24dp.png",
@@ -70,6 +70,10 @@
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_send_black_24dp.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_send_black_24dp.png"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\beauty.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\beauty.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_delete_black_24dp.png",
