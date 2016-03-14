@@ -8,25 +8,25 @@ package in.srain.cube.views.ptr;
 
 public final class R {
 	public static final class attr {
-		public static final int ptr_content = 0x7f0100b1;
-		public static final int ptr_duration_to_close = 0x7f0100b4;
-		public static final int ptr_duration_to_close_header = 0x7f0100b5;
-		public static final int ptr_header = 0x7f0100b0;
-		public static final int ptr_keep_header_when_refresh = 0x7f0100b7;
-		public static final int ptr_pull_to_fresh = 0x7f0100b6;
-		public static final int ptr_ratio_of_header_height_to_refresh = 0x7f0100b3;
-		public static final int ptr_resistance = 0x7f0100b2;
-		public static final int ptr_rotate_ani_time = 0x7f0100af;
+		public static final int ptr_content = 0x7f01009a;
+		public static final int ptr_duration_to_close = 0x7f01009d;
+		public static final int ptr_duration_to_close_header = 0x7f01009e;
+		public static final int ptr_header = 0x7f010099;
+		public static final int ptr_keep_header_when_refresh = 0x7f0100a0;
+		public static final int ptr_pull_to_fresh = 0x7f01009f;
+		public static final int ptr_ratio_of_header_height_to_refresh = 0x7f01009c;
+		public static final int ptr_resistance = 0x7f01009b;
+		public static final int ptr_rotate_ani_time = 0x7f010098;
 	}
 	public static final class drawable {
-		public static final int ptr_rotate_arrow = 0x7f02006e;
+		public static final int ptr_rotate_arrow = 0x7f02006c;
 	}
 	public static final class id {
-		public static final int ptr_classic_header_rotate_view = 0x7f0d00cf;
-		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0d00ce;
-		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0d00cc;
-		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0d00cd;
-		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0d00d0;
+		public static final int ptr_classic_header_rotate_view = 0x7f0d00a7;
+		public static final int ptr_classic_header_rotate_view_header_last_update = 0x7f0d00a6;
+		public static final int ptr_classic_header_rotate_view_header_text = 0x7f0d00a4;
+		public static final int ptr_classic_header_rotate_view_header_title = 0x7f0d00a5;
+		public static final int ptr_classic_header_rotate_view_progressbar = 0x7f0d00a8;
 	}
 	public static final class layout {
 		public static final int cube_ptr_classic_default_header = 0x7f04001d;
@@ -44,9 +44,9 @@ public final class R {
 		public static final int cube_ptr_seconds_ago = 0x7f06001f;
 	}
 	public static final class styleable {
-		public static final int[] PtrClassicHeader = { 0x7f0100af };
+		public static final int[] PtrClassicHeader = { 0x7f010098 };
 		public static final int PtrClassicHeader_ptr_rotate_ani_time = 0;
-		public static final int[] PtrFrameLayout = { 0x7f0100b0, 0x7f0100b1, 0x7f0100b2, 0x7f0100b3, 0x7f0100b4, 0x7f0100b5, 0x7f0100b6, 0x7f0100b7 };
+		public static final int[] PtrFrameLayout = { 0x7f010099, 0x7f01009a, 0x7f01009b, 0x7f01009c, 0x7f01009d, 0x7f01009e, 0x7f01009f, 0x7f0100a0 };
 		public static final int PtrFrameLayout_ptr_content = 1;
 		public static final int PtrFrameLayout_ptr_duration_to_close = 4;
 		public static final int PtrFrameLayout_ptr_duration_to_close_header = 5;

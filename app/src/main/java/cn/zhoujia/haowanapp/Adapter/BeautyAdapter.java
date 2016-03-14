@@ -3,45 +3,65 @@ package cn.zhoujia.haowanapp.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.widget.CardView;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.balysv.materialripple.MaterialRippleLayout;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import cn.zhoujia.haowanapp.Bean.BeautyBean.NewslistEntity;
+import cn.zhoujia.haowanapp.Bean.BeautyBean.TngouEntity;
 import cn.zhoujia.haowanapp.R;
 
 /**
  * Created by Zhoujia on 2016/3/12.
  */
-public class BeautyAdapter extends BaseAdapter {
-
+public class BeautyAdapter extends XRecyclerView.Adapter<BeautyAdapter.ViewHolder> {
     private Context mcontext;
-    LayoutInflater layoutInflater;
-    List<NewslistEntity> newslistEntityList;
+    List<TngouEntity> tngouEntityList;
 
-    public BeautyAdapter(Context context, List<NewslistEntity> newslistEntityList) {
+    public BeautyAdapter(Context context, List<TngouEntity> tngouEntityList) {
         this.mcontext = context;
-        this.newslistEntityList = newslistEntityList;
-        layoutInflater = LayoutInflater.from(context);
+        this.tngouEntityList = tngouEntityList;
     }
 
     @Override
-    public int getCount() {
-        return newslistEntityList.size();
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_beautymulti, viewGroup, false);
+        ViewHolder viewHolder = new ViewHolder(view);
+       // viewHolder.setIsRecyclable(true);
+        return viewHolder;
     }
 
     @Override
-    public Object getItem(int position) {
-        return newslistEntityList.get(position);
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+
+        String imgUrl = "";
+        holder.imgBeauty.setTag(imgUrl);
+        // 预设一个图片
+        holder.imgBeauty.setImageResource(R.drawable.ic_launcher);
+        // 通过 tag 来防止图片错位
+        if (holder.imgBeauty.getTag() != null && holder.imgBeauty.getTag().equals(imgUrl)) {
+            Picasso.with(mcontext).load("http://tnfs.tngou.net/img/" + tngouEntityList.get(position).getImg()).into(holder.imgBeauty);
+        }
+        holder.txtBeauty.setText(tngouEntityList.get(position).getTitle().toString());
+        holder.imgBeauty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Uri uri = Uri.parse("http://www.tngou.net/tnfs/show/" + tngouEntityList.get(position).getId());
+                final Intent it = new Intent(Intent.ACTION_VIEW, uri);
+                mcontext.startActivity(it);
+            }
+        });
     }
 
     @Override
@@ -50,35 +70,23 @@ public class BeautyAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
-        if (convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.item_beautymulti, null);
-            new ViewHolder(convertView);
-        }
-        ViewHolder holder = (ViewHolder) convertView.getTag();
-        Picasso.with(mcontext).load(newslistEntityList.get(position).getPicUrl()).into(holder.imgBeauty);
-
-        holder.txtBeauty.setText(newslistEntityList.get(position).getTitle().toString());
-        holder.imgBeauty.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final Uri uri = Uri.parse(newslistEntityList.get(position).getUrl());
-                final Intent it = new Intent(Intent.ACTION_VIEW, uri);
-                mcontext.startActivity(it);
-            }
-        });
-        return convertView;
+    public int getItemCount() {
+        return tngouEntityList.size();
     }
 
-    class ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         @Bind(R.id.img_beauty)
         ImageView imgBeauty;
         @Bind(R.id.txt_beauty)
         TextView txtBeauty;
+        @Bind(R.id.ripplelayout)
+        MaterialRippleLayout ripplelayout;
+        @Bind(R.id.card_view)
+        CardView cardView;
 
-        ViewHolder(View view) {
-            ButterKnife.bind(this, view);
-            view.setTag(this);
+        public ViewHolder(View itemView) {
+            super(itemView);
+            ButterKnife.bind(this, itemView);
         }
     }
 }

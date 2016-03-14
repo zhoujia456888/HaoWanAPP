@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -103,9 +104,7 @@ public class JokeFragment extends Fragment {
                 }, 1000);
             }
         });
-
         jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
-
         materialListview.setAdapter(jokeAdapter);
     }
 
@@ -162,7 +161,6 @@ public class JokeFragment extends Fragment {
         JokeBean jokeBean = gson.fromJson(responseString, JokeBean.class);
         JokeBean.ShowapiResBodyEntity showapiResBodyEntity = jokeBean.getShowapi_res_body();
         contentlistEntityList = showapiResBodyEntity.getContentlist();
-
         LoadingListener(materialListview);
 
         //   Log.d("JokeFragment", contentlistEntityList.get(0).getText());

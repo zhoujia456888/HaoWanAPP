@@ -1,8 +1,12 @@
 package cn.zhoujia.haowanapp.Fragment;
 
+import android.graphics.Rect;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +17,8 @@ import com.baidu.apistore.sdk.ApiCallBack;
 import com.baidu.apistore.sdk.ApiStoreSDK;
 import com.baidu.apistore.sdk.network.Parameters;
 import com.google.gson.Gson;
-import com.huewu.pla.lib.MultiColumnListView;
-
-import org.json.JSONException;
+import com.jcodecraeer.xrecyclerview.ProgressStyle;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
 
 import java.util.List;
 
@@ -23,11 +26,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import cn.zhoujia.haowanapp.Adapter.BeautyAdapter;
 import cn.zhoujia.haowanapp.Bean.BeautyBean;
+import cn.zhoujia.haowanapp.Bean.BeautyBean.TngouEntity;
 import cn.zhoujia.haowanapp.R;
-import in.srain.cube.views.ptr.PtrClassicFrameLayout;
-import in.srain.cube.views.ptr.PtrFrameLayout;
-import in.srain.cube.views.ptr.PtrHandler;
-import cn.zhoujia.haowanapp.Bean.BeautyBean.NewslistEntity;
 
 /**
  * 美女界面
@@ -36,15 +36,15 @@ import cn.zhoujia.haowanapp.Bean.BeautyBean.NewslistEntity;
  */
 public class BeautyFragment extends Fragment {
 
-    @Bind(R.id.list_multiColumn)
-    MultiColumnListView listMultiColumn;
-    @Bind(R.id.beauty_pulltofresh)
-    PtrClassicFrameLayout beautyPulltofresh;
-    private boolean mSearchCheck;
+    @Bind(R.id.beauty_xrecyclerview)
+    XRecyclerView beautyXrecyclerview;
     private static final String TEXT_FRAGMENT = "TEXT_FRAGMENT";
-    List<NewslistEntity> newslistEntityList;
+    List<TngouEntity> tngouEntityList;
+    BeautyAdapter beautyAdapter;
+    int num = 20;
+    long id=0;
+    int classify=1;
 
-    int num=10;
 
     public static BeautyFragment newInstance(String text) {
         BeautyFragment bFragment = new BeautyFragment();
@@ -58,60 +58,69 @@ public class BeautyFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_beauty, container, false);
+        rootView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+
         ButterKnife.bind(this, rootView);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        beautyXrecyclerview.setLayoutManager(layoutManager);
 
-        beautyPulltofresh.setPtrHandler(new PtrHandler() {
-            @Override
-            public void onRefreshBegin(PtrFrameLayout frame) {
-                frame.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        beautyPulltofresh.refreshComplete();
-                        
-                        getbeautyData(String.valueOf(num));
-                    }
-                }, 1800);
-            }
+        beautyXrecyclerview.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
+        beautyXrecyclerview.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
+        beautyXrecyclerview.setArrowImageView(R.mipmap.iconfont_downgrey);
 
-            @Override
-            public boolean checkCanDoRefresh(PtrFrameLayout frame, View content, View header) {
-                return true;
-            }
-        });
-        beautyPulltofresh.setLastUpdateTimeRelateObject(this);
-
-        beautyPulltofresh.setResistance(1.7f);
-        beautyPulltofresh.setRatioOfHeaderHeightToRefresh(1.2f);
-        beautyPulltofresh.setDurationToClose(200);
-        beautyPulltofresh.setDurationToCloseHeader(1000);
-        beautyPulltofresh.setPullToRefresh(false);
-        beautyPulltofresh.setKeepHeaderWhenRefresh(true);
-        beautyPulltofresh.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                beautyPulltofresh.autoRefresh();
-            }
-        }, 150);
-
+        getbeautyData(num);
         return rootView;
     }
 
-    private void getbeautyData(String num) {
-        Parameters para = new Parameters();
-        para.put("num", num);
-        ApiStoreSDK.execute("http://apis.baidu.com/txapi/mvtp/meinv",
-                ApiStoreSDK.GET,
-                para,
-                new ApiCallBack() {
+    private void LoadingListener(final XRecyclerView beautyXrecyclerview) {
+        beautyXrecyclerview.setLoadingListener(new XRecyclerView.LoadingListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        getbeautyData(num);
+                        beautyAdapter.notifyDataSetChanged();
+                        beautyXrecyclerview.refreshComplete();
+                    }
+                }, 1000);
+            }
 
+            @Override
+            public void onLoadMore() {
+                new Handler().postDelayed(new Runnable() {
+                    public void run() {
+                        getbeautyData(num);
+                        beautyXrecyclerview.loadMoreComplete();
+                        beautyAdapter.notifyDataSetChanged();
+                        beautyXrecyclerview.refreshComplete();
+                    }
+                }, 1000);
+            }
+        });
+        beautyAdapter = new BeautyAdapter(this.getActivity(), tngouEntityList);
+        beautyXrecyclerview.setAdapter(beautyAdapter);
+
+        beautyXrecyclerview.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+
+    }
+
+    private void getbeautyData(int  num) {
+        id=(long)(1+Math.random()*(10-1+1));
+        classify=(int)(1+Math.random()*(10-1+1));
+        Parameters para = new Parameters();
+//        para.put("id", 1);
+//        para.put("rows", num);
+//        para.put("classify", 1);
+        ApiStoreSDK.execute("http://www.tngou.net/tnfs/api/news?"+"id="+id+"&rows="+num+"&classify="+classify, ApiStoreSDK.GET, para,
+                new ApiCallBack() {
                     @Override
                     public void onSuccess(int status, String responseString) {
                         Log.i("sdkdemo", "onSuccess");
                         // logMsg(responseString);
                         //解析返回的数据
-                        AnalyzeData(responseString);
-
                         Log.e("responseString", responseString);
+                        AnalyzeData(responseString);
                     }
 
                     @Override
@@ -130,12 +139,10 @@ public class BeautyFragment extends Fragment {
 
     private void AnalyzeData(String responseString) {
         Gson gson = new Gson();
-        BeautyBean beautyBean=gson.fromJson(responseString, BeautyBean.class);
-         newslistEntityList=beautyBean.getNewslist();
+        BeautyBean beautyBean = gson.fromJson(responseString, BeautyBean.class);
+        tngouEntityList = beautyBean.getTngou();
 
-        BeautyAdapter beautyAdapter= new BeautyAdapter(this.getActivity(), newslistEntityList);
-
-        listMultiColumn.setAdapter(beautyAdapter);
+        LoadingListener(beautyXrecyclerview);
 
     }
 
@@ -155,9 +162,9 @@ public class BeautyFragment extends Fragment {
         return str.toString();
     }
 
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        ButterKnife.unbind(this);
     }
 }

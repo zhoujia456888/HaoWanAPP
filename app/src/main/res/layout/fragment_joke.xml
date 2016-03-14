@@ -5,8 +5,8 @@
     android:orientation="vertical">
 
     <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/material_listview"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/material_listview"/>
+        android:layout_height="fill_parent" />
 
 </LinearLayout>

@@ -53,5 +53,4 @@ dependencies {
     compile 'com.android.support:cardview-v7:23.1.1'
     compile 'in.srain.cube:ultra-ptr:1.0.11'
     compile 'com.squareup.picasso:picasso:2.5.2'
-    compile project(':Pinterest')
 }

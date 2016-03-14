@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HaoWanAPP.iml" filepath="$PROJECT_DIR$/HaoWanAPP.iml" />
       <module fileurl="file://$PROJECT_DIR$/NavigationDrawer/NavigationDrawer.iml" filepath="$PROJECT_DIR$/NavigationDrawer/NavigationDrawer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Pinterest/Pinterest.iml" filepath="$PROJECT_DIR$/Pinterest/Pinterest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/photocropper/photocropper.iml" filepath="$PROJECT_DIR$/photocropper/photocropper.iml" />
       <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />

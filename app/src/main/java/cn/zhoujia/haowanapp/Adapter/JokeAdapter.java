@@ -40,7 +40,6 @@ public class JokeAdapter extends XRecyclerView.Adapter<JokeAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
-
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_jokecardview, viewGroup, false);
         return new ViewHolder(view);
     }

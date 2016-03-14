@@ -8,7 +8,6 @@ android/support/v7/app/AppCompatDelegate.class
 cn/zhoujia/haowanapp/Activity/selectcity/MyLetterListView.class
 butterknife/OnTextChanged$Callback.class
 com/afollestad/materialdialogs/DialogAction.class
-com/huewu/pla/lib/internal/PLA_AdapterView.class
 android/support/v4/view/GravityCompat.class
 android/support/v7/widget/RecyclerView$3.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/BallScaleRippleIndicator.class
@@ -68,7 +67,6 @@ android/support/annotation/StringRes.class
 butterknife/Bind.class
 com/afollestad/materialdialogs/color/ColorChooserDialog$4.class
 uk/co/senab/photoview/PhotoView.class
-com/huewu/pla/lib/internal/PLA_AbsListView$LayoutParams.class
 com/afollestad/materialdialogs/color/ColorChooserDialog$ColorCallback.class
 android/support/v4/app/ActivityCompat21.class
 android/support/v4/view/ViewCompat$BaseViewCompatImpl.class
@@ -122,7 +120,6 @@ android/support/v4/app/Fragment$InstantiationException.class
 android/support/design/widget/Snackbar$1.class
 br/liveo/navigationliveo/NavigationLiveo.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/SquareSpinIndicator.class
-com/huewu/pla/lib/internal/PLA_AbsListView.class
 cn/zhoujia/haowanapp/Activity/ImageShower.class
 android/support/v4/widget/MaterialProgressDrawable.class
 android/support/v4/app/SuperNotCalledException.class
@@ -185,8 +182,8 @@ android/support/annotation/IdRes.class
 br/liveo/navigationliveo/NavigationLiveo$DrawerItemClickListener.class
 android/support/v4/view/NestedScrollingParentHelper.class
 android/support/annotation/UiThread.class
-android/support/v4/widget/SimpleCursorAdapter.class
 android/support/annotation/IntDef.class
+android/support/v4/widget/SimpleCursorAdapter.class
 br/liveo/interfaces/OnItemClickListener.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$ResultListAdapter.class
 android/support/v4/media/VolumeProviderCompatApi21.class
@@ -254,8 +251,8 @@ android/support/annotation/Keep.class
 android/support/v4/media/RatingCompat.class
 android/support/design/widget/TabLayout.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
-com/afollestad/materialdialogs/DialogBase.class
 android/support/v7/widget/RecyclerView$LayoutParams.class
+com/afollestad/materialdialogs/DialogBase.class
 android/support/v4/app/FragmentHostCallback.class
 android/support/v4/content/PermissionChecker.class
 cn/zhoujia/haowanapp/Fragment/BeautyFragment.class
@@ -415,7 +412,6 @@ android/support/v4/media/RatingCompat$StarStyle.class
 android/support/design/widget/Snackbar$8.class
 android/support/v4/app/NavUtils.class
 br/liveo/navigationliveo/R$layout.class
-com/huewu/pla/lib/internal/PLA_ListView.class
 com/afollestad/materialdialogs/AlertDialogWrapper$Builder.class
 br/liveo/Model/HelpItem.class
 cn/zhoujia/haowanapp/Service/LocationService.class
@@ -454,8 +450,8 @@ android/support/design/widget/AppBarLayout$Behavior$1.class
 android/support/v4/widget/SlidingPaneLayout.class
 org/hybridsquad/android/library/CropHandler.class
 com/baidu/location/i/i.class
-com/afollestad/materialdialogs/MaterialDialog$Builder.class
 android/support/v4/view/AccessibilityDelegateCompat.class
+com/afollestad/materialdialogs/MaterialDialog$Builder.class
 android/support/v4/widget/CursorAdapter.class
 android/support/design/widget/AppBarLayout$LayoutParams.class
 com/afollestad/materialdialogs/color/ColorChooserDialog$1.class

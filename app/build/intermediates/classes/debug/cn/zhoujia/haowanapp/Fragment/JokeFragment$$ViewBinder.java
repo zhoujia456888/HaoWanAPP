@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class JokeFragment$$ViewBinder<T extends cn.zhoujia.haowanapp.Fragment.JokeFragment> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558618, "field 'materialListview'");
-    target.materialListview = finder.castView(view, 2131558618, "field 'materialListview'");
+    view = finder.findRequiredView(source, 2131558577, "field 'materialListview'");
+    target.materialListview = finder.castView(view, 2131558577, "field 'materialListview'");
   }
 
   @Override public void unbind(T target) {
