@@ -104,6 +104,7 @@ public class JokeFragment extends Fragment {
                 }, 1000);
             }
         });
+
         jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
         materialListview.setAdapter(jokeAdapter);
     }
