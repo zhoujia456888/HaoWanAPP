@@ -220,6 +220,12 @@ public class MainFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
         locationService.unregisterListener(mListener); //注销掉定位监听
         locationService.stop(); //停止定位服务
     }

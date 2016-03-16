@@ -66,6 +66,7 @@ public class JokeFragment extends Fragment {
         materialListview.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
         materialListview.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
         materialListview.setArrowImageView(R.mipmap.iconfont_downgrey);
+        LoadingListener(materialListview);
 
         getJoke(String.valueOf(page));
         return rootView;
@@ -80,7 +81,7 @@ public class JokeFragment extends Fragment {
                         //contentlistEntityList.clear();
                         page++;
                         getJoke(String.valueOf(page));
-                         jokeAdapter.notifyDataSetChanged();
+                        jokeAdapter.notifyDataSetChanged();
                         materialListview.refreshComplete();
                     }
 
@@ -97,7 +98,7 @@ public class JokeFragment extends Fragment {
                             materialListview.loadMoreComplete();
                             jokeAdapter.notifyDataSetChanged();
                             materialListview.refreshComplete();
-                        } else if(page == 1){
+                        } else if (page == 1) {
                             materialListview.noMoreLoading();
                         }
                     }
@@ -105,8 +106,6 @@ public class JokeFragment extends Fragment {
             }
         });
 
-        jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
-        materialListview.setAdapter(jokeAdapter);
     }
 
     @Override
@@ -162,7 +161,10 @@ public class JokeFragment extends Fragment {
         JokeBean jokeBean = gson.fromJson(responseString, JokeBean.class);
         JokeBean.ShowapiResBodyEntity showapiResBodyEntity = jokeBean.getShowapi_res_body();
         contentlistEntityList = showapiResBodyEntity.getContentlist();
-        LoadingListener(materialListview);
+
+        jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
+        materialListview.setAdapter(jokeAdapter);
+
 
         //   Log.d("JokeFragment", contentlistEntityList.get(0).getText());
 
@@ -196,6 +198,5 @@ public class JokeFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
     }
 }

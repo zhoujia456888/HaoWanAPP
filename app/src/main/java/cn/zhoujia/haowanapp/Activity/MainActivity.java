@@ -27,6 +27,7 @@ import br.liveo.navigationliveo.NavigationLiveo;
 import cn.zhoujia.haowanapp.Fragment.BeautyFragment;
 import cn.zhoujia.haowanapp.Fragment.JokeFragment;
 import cn.zhoujia.haowanapp.Fragment.MainFragment;
+import cn.zhoujia.haowanapp.Fragment.TranslateFragment;
 import cn.zhoujia.haowanapp.MyApplication;
 import cn.zhoujia.haowanapp.R;
 
@@ -71,6 +72,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         //mHelpLiveo.addSubHeader(getString(R.string.classify)); //Item subHeader ITEM分类小标题
         mHelpLiveo.add(getString(R.string.beauty_page), R.mipmap.ic_beauty);
         mHelpLiveo.add(getString(R.string.joke_page), R.mipmap.ic_joke);
+        mHelpLiveo.add(getString(R.string.translate_page),R.mipmap.ic_translate);
 
         mHelpLiveo.addSeparator(); // Item separator//分割线
 
@@ -106,6 +108,10 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             case 2:
                 mFragment = JokeFragment.newInstance(mHelpLiveo.get(position).getName());
                 NavigationLiveo.mToolbar.setTitle(getString(R.string.joke_page));
+                break;
+            case 3:
+                mFragment = TranslateFragment.newInstance(mHelpLiveo.get(position).getName());
+                NavigationLiveo.mToolbar.setTitle(getString(R.string.translate_page));
                 break;
 
             default:

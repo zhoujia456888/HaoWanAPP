@@ -327,6 +327,7 @@ android/support/v4/media/MediaBrowserCompat$MediaItem.class
 android/support/v4/view/ViewCompat$MarshmallowViewCompatImpl.class
 android/support/v4/media/session/MediaSessionCompat$1.class
 android/support/v4/view/LayoutInflaterFactory.class
+cn/zhoujia/haowanapp/Fragment/TranslateFragment.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$HotCityAdapter.class
 android/support/v4/widget/MaterialProgressDrawable$3.class
 android/support/v4/media/session/MediaSessionCompat$Token.class

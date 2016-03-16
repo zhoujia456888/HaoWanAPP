@@ -36,6 +36,10 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_user_background.jpg"
     },
     {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_translate.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_translate.png"
+    },
+    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\wb_search_icon.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\wb_search_icon.png"
     },

@@ -1,15 +1,19 @@
 [
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\md_btn_shape.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\drawable-v21\\md_btn_shape.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\md_btn_selector_ripple.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\drawable-v21\\md_btn_selector_ripple.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\md_btn_selector_ripple_dark.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\drawable-v21\\md_btn_selector_ripple_dark.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\md_btn_shape.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\drawable-v21\\md_btn_shape.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\selector.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NiceSpinner\\unspecified\\res\\drawable-v21\\selector.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",

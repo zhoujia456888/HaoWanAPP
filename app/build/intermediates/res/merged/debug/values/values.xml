@@ -174,6 +174,7 @@
     <color name="ksw_md_solid_normal">#ECECEC</color>
     <color name="ksw_md_solid_shadow">#33000000</color>
     <color name="light_blue">#6593cb</color>
+    <color name="light_gray">#fff5f5f5</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -275,6 +276,7 @@
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
+    <declare-styleable name="FloatLabeledEditText"><attr format="reference" name="fletTextAppearance"/><attr format="reference|dimension" name="fletPadding"/><attr format="reference|dimension" name="fletPaddingLeft"/><attr format="reference|dimension" name="fletPaddingTop"/><attr format="reference|dimension" name="fletPaddingRight"/><attr format="reference|dimension" name="fletPaddingBottom"/><attr format="reference|color" name="fletBackground"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/></declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
@@ -287,6 +289,7 @@
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
+    <declare-styleable name="NiceSpinner"><attr format="color" name="arrowTint"/><attr format="boolean" name="hideArrow"/></declare-styleable>
     <declare-styleable name="PopupWindow"><attr format="boolean" name="overlapAnchor"/><attr name="android:popupBackground"/></declare-styleable>
     <declare-styleable name="PopupWindowBackgroundState"><attr format="boolean" name="state_above_anchor"/></declare-styleable>
     <declare-styleable name="PtrClassicHeader"><attr format="integer" name="ptr_rotate_ani_time"/></declare-styleable>
@@ -467,7 +470,9 @@
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
     <dimen name="textandiconmargin">10dp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
     <dimen name="userBackground_layout_height">164dp</dimen>
     <dimen name="userData_layout_height">56dp</dimen>
     <dimen name="userData_layout_marginBottom">8dp</dimen>
@@ -578,7 +583,7 @@
     <string name="md_presets_label">Presets</string>
     <string name="md_storage_perm_error">Your app has not been granted the READ_EXTERNAL_STORAGE permission.</string>
     <string name="neterror">网络错误</string>
-    <string name="neterrorinfo">检测到你目前尚未链接网络</string>
+    <string name="neterrorinfo">检测到你目前尚未连接网络</string>
     <string name="nomore_loading">no more to be loaded</string>
     <string name="ok">确定</string>
     <string name="personal_birth">出生日期</string>
@@ -598,6 +603,8 @@
     <string name="start_navigation_listener">You must start the .build(); in onInit() from your main Activity.</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="title_null_or_empty">The title can not be null or empty</string>
+    <string name="translate_content_hint">请在此输入需要翻译的内容</string>
+    <string name="translate_page">翻译</string>
     <string name="userdatailinfo">用户详情</string>
     <string name="value_icon_should_be_0">The value of the icon for a subHeader item should be 0</string>
     <string name="weather_page">天气</string>

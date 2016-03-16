@@ -136,8 +136,16 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_arrow_drop_down_black_24dp.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NiceSpinner\\unspecified\\res\\drawable-xxhdpi-v4\\ic_arrow_drop_down_black_24dp.png"
+    },
+    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\shadow_background.9.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NiceSpinner\\unspecified\\res\\drawable-xxhdpi-v4\\shadow_background.9.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
@@ -148,12 +156,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xxhdpi\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",

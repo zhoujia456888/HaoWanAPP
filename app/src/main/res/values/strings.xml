@@ -3,7 +3,7 @@
     <string name="app_name">好玩APP</string>
     <string name="welcome_hint">就是好玩，不需要理由</string>
     <string name="neterror">网络错误</string>
-    <string name="neterrorinfo">检测到你目前尚未链接网络</string>
+    <string name="neterrorinfo">检测到你目前尚未连接网络</string>
     <string name="cancel">取消</string>
     <string name="ok">确定</string>
     <string name="end">完成</string>
@@ -15,6 +15,8 @@
     <string name="weather_page">天气</string>
     <string name="joke_page">笑话</string>
     <string name="beauty_page">美女</string>
+    <string name="translate_page">翻译</string>
+    <string name="translate_content_hint">请在此输入需要翻译的内容</string>
 
     <!--用户详情-->
     <string name="userdatailinfo">用户详情</string>

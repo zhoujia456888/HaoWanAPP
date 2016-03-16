@@ -68,6 +68,7 @@ public class BeautyFragment extends Fragment {
         beautyXrecyclerview.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
         beautyXrecyclerview.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
         beautyXrecyclerview.setArrowImageView(R.mipmap.iconfont_downgrey);
+        LoadingListener(beautyXrecyclerview);
 
         getbeautyData(num);
         return rootView;
@@ -98,9 +99,6 @@ public class BeautyFragment extends Fragment {
                 }, 1000);
             }
         });
-        beautyAdapter = new BeautyAdapter(this.getActivity(), tngouEntityList);
-        beautyXrecyclerview.setAdapter(beautyAdapter);
-
         beautyXrecyclerview.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
     }
@@ -141,8 +139,8 @@ public class BeautyFragment extends Fragment {
         Gson gson = new Gson();
         BeautyBean beautyBean = gson.fromJson(responseString, BeautyBean.class);
         tngouEntityList = beautyBean.getTngou();
-
-        LoadingListener(beautyXrecyclerview);
+        beautyAdapter = new BeautyAdapter(this.getActivity(), tngouEntityList);
+        beautyXrecyclerview.setAdapter(beautyAdapter);
 
     }
 
@@ -165,6 +163,5 @@ public class BeautyFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
     }
 }
