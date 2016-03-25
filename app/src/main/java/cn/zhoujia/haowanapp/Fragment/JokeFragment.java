@@ -18,6 +18,7 @@ import com.baidu.apistore.sdk.network.Parameters;
 import com.google.gson.Gson;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
+import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import org.json.JSONException;
 
@@ -80,6 +81,7 @@ public class JokeFragment extends Fragment {
                     public void run() {
                         //contentlistEntityList.clear();
                         page++;
+                        contentlistEntityList.clear();
                         getJoke(String.valueOf(page));
                         jokeAdapter.notifyDataSetChanged();
                         materialListview.refreshComplete();
@@ -93,12 +95,14 @@ public class JokeFragment extends Fragment {
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
                         if (page > 1) {
+                            contentlistEntityList.clear();
                             page++;
                             getJoke(String.valueOf(page));
                             materialListview.loadMoreComplete();
                             jokeAdapter.notifyDataSetChanged();
                             materialListview.refreshComplete();
                         } else if (page == 1) {
+                           // contentlistEntityList.clear();
                             materialListview.noMoreLoading();
                         }
                     }
@@ -111,8 +115,6 @@ public class JokeFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        // String Description=ApiStoreSdkHttpClient.ApiStoreHttpClient();
-
     }
 
     @Override
@@ -139,7 +141,7 @@ public class JokeFragment extends Fragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                         Log.e("responseString", responseString);
+                        Log.e("responseString", responseString);
                     }
 
                     @Override
@@ -159,14 +161,16 @@ public class JokeFragment extends Fragment {
     private void AnalyzeData(String responseString) throws JSONException {
         Gson gson = new Gson();
         JokeBean jokeBean = gson.fromJson(responseString, JokeBean.class);
-        JokeBean.ShowapiResBodyEntity showapiResBodyEntity = jokeBean.getShowapi_res_body();
-        contentlistEntityList = showapiResBodyEntity.getContentlist();
+        int res_code=jokeBean.getShowapi_res_code();
+        if(res_code==0){
+            JokeBean.ShowapiResBodyEntity showapiResBodyEntity = jokeBean.getShowapi_res_body();
+            contentlistEntityList = showapiResBodyEntity.getContentlist();
 
-        jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
-        materialListview.setAdapter(jokeAdapter);
-
-
-        //   Log.d("JokeFragment", contentlistEntityList.get(0).getText());
+            jokeAdapter = new JokeAdapter(this.getActivity(), contentlistEntityList);
+            materialListview.setAdapter(jokeAdapter);
+        }else{
+            logMsg(jokeBean.getShowapi_res_error());
+        }
 
     }
 

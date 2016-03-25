@@ -89,7 +89,7 @@ public class TranslateFragment extends Fragment {
         super.onDestroyView();
     }
 
-    public static Fragment newInstance(String name) {
+    public static TranslateFragment newInstance(String name) {
         TranslateFragment tFragment = new TranslateFragment();
         Bundle mBundle = new Bundle();
         mBundle.putString(TEXT_FRAGMENT, name);

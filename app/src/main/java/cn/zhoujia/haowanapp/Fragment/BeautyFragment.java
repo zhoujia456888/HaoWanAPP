@@ -61,9 +61,14 @@ public class BeautyFragment extends Fragment {
         rootView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
         ButterKnife.bind(this, rootView);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager( 2,
+                StaggeredGridLayoutManager.VERTICAL);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         beautyXrecyclerview.setLayoutManager(layoutManager);
+//
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this.getActivity());
+//        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+//        beautyXrecyclerview.setLayoutManager(layoutManager);
 
         beautyXrecyclerview.setRefreshProgressStyle(ProgressStyle.BallSpinFadeLoader);
         beautyXrecyclerview.setLoadingMoreProgressStyle(ProgressStyle.BallRotate);
@@ -80,7 +85,9 @@ public class BeautyFragment extends Fragment {
             public void onRefresh() {
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
+                        tngouEntityList.clear();
                         getbeautyData(num);
+
                         beautyAdapter.notifyDataSetChanged();
                         beautyXrecyclerview.refreshComplete();
                     }
@@ -91,6 +98,7 @@ public class BeautyFragment extends Fragment {
             public void onLoadMore() {
                 new Handler().postDelayed(new Runnable() {
                     public void run() {
+                        tngouEntityList.clear();
                         getbeautyData(num);
                         beautyXrecyclerview.loadMoreComplete();
                         beautyAdapter.notifyDataSetChanged();
@@ -99,7 +107,7 @@ public class BeautyFragment extends Fragment {
                 }, 1000);
             }
         });
-        beautyXrecyclerview.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+
 
     }
 
@@ -139,8 +147,11 @@ public class BeautyFragment extends Fragment {
         Gson gson = new Gson();
         BeautyBean beautyBean = gson.fromJson(responseString, BeautyBean.class);
         tngouEntityList = beautyBean.getTngou();
+
         beautyAdapter = new BeautyAdapter(this.getActivity(), tngouEntityList);
+
         beautyXrecyclerview.setAdapter(beautyAdapter);
+
 
     }
 

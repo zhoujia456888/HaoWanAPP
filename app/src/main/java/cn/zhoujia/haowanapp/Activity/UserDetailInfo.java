@@ -83,7 +83,7 @@ public class UserDetailInfo extends BaseActivity implements CropHandler {
         ButterKnife.bind(this);
         //设置toolbar标题为空
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
-        toolbar.setTitle("");
+        toolbar.setTitle(getString(R.string.userdatailinfo));
         setSupportActionBar(toolbar);
         //返回按键
         toolbar.setNavigationIcon(R.mipmap.ic_action_back);

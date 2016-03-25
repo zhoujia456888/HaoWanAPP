@@ -1,15 +1,12 @@
 package cn.zhoujia.haowanapp.Activity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
@@ -27,6 +24,7 @@ import br.liveo.navigationliveo.NavigationLiveo;
 import cn.zhoujia.haowanapp.Fragment.BeautyFragment;
 import cn.zhoujia.haowanapp.Fragment.JokeFragment;
 import cn.zhoujia.haowanapp.Fragment.MainFragment;
+import cn.zhoujia.haowanapp.Fragment.NotepadFragment;
 import cn.zhoujia.haowanapp.Fragment.TranslateFragment;
 import cn.zhoujia.haowanapp.MyApplication;
 import cn.zhoujia.haowanapp.R;
@@ -39,9 +37,15 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
     public static Activity activity;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         MyApplication.list.add(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getUserinfo();
     }
 
     @Override
@@ -53,18 +57,7 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
     @Override
     public void onInt(Bundle savedInstanceState) {
 
-        // 用户信息
-        SharedPreferences sp = getSharedPreferences("userinfo", MODE_PRIVATE);
-        this.userName.setText(sp.getString("nickname", "").toString().trim());
-        this.userEmail.setText(sp.getString("phone", "").toString().trim());
-        imagestr=sp.getString("userphotouri", "1////1").toString().trim();
-        File file  = new File(imagestr.split("///")[1]);
-        if (!file .exists()) {
-            this.userPhoto.setImageResource(R.mipmap.ic_launcher);
-        } else {
-            this.userPhoto.setImageBitmap(BitmapUtil.decodeUriAsBitmap(this, Uri.parse(imagestr)));
-        }
-        this.userBackground.setImageResource(R.drawable.ic_user_background_first);
+        getUserinfo();
 
         // 创建抽屉菜单选项ITEM
         mHelpLiveo = new HelpLiveo();
@@ -73,8 +66,9 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         mHelpLiveo.add(getString(R.string.beauty_page), R.mipmap.ic_beauty);
         mHelpLiveo.add(getString(R.string.joke_page), R.mipmap.ic_joke);
         mHelpLiveo.add(getString(R.string.translate_page),R.mipmap.ic_translate);
+        mHelpLiveo.add(getString(R.string.notepad_page),R.mipmap.ic_notepad);
 
-        mHelpLiveo.addSeparator(); // Item separator//分割线
+                mHelpLiveo.addSeparator(); // Item separator//分割线
 
         with(this).startingPosition(0).addAllHelpItem(mHelpLiveo.getHelp())
                 .colorItemSelected(R.color.nliveo_blue_colorPrimary)
@@ -87,6 +81,21 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
 
         int position = this.getCurrentPosition();
         this.setElevationToolBar(position != 2 ? 15 : 0);
+    }
+
+    private void getUserinfo() {
+        // 用户信息
+        SharedPreferences sp = getSharedPreferences("userinfo", MODE_PRIVATE);
+        this.userName.setText(sp.getString("nickname", "").toString().trim());
+        this.userEmail.setText(sp.getString("phone", "").toString().trim());
+        imagestr=sp.getString("userphotouri", "1////1").toString().trim();
+        File file  = new File(imagestr.split("///")[1]);
+        if (!file .exists()) {
+            this.userPhoto.setImageResource(R.mipmap.ic_launcher);
+        } else {
+            this.userPhoto.setImageBitmap(BitmapUtil.decodeUriAsBitmap(this, Uri.parse(imagestr)));
+        }
+        this.userBackground.setImageResource(R.drawable.ic_user_background_first);
     }
 
     @Override
@@ -112,6 +121,10 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
             case 3:
                 mFragment = TranslateFragment.newInstance(mHelpLiveo.get(position).getName());
                 NavigationLiveo.mToolbar.setTitle(getString(R.string.translate_page));
+                break;
+            case 4:
+                mFragment = NotepadFragment.newInstance(mHelpLiveo.get(position).getName());
+                NavigationLiveo.mToolbar.setTitle(getString(R.string.notepad_page));
                 break;
 
             default:

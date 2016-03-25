@@ -2,11 +2,13 @@ package cn.zhoujia.haowanapp.Activity;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import cn.zhoujia.haowanapp.MyApplication;
@@ -48,6 +50,21 @@ public class BaseActivity extends AppCompatActivity {
         win.setAttributes(winParams);
 
     }
+
+   // Universal-Image-Loader
+
+    public static DisplayImageOptions displayImageOptions() {
+    //显示图片的配置
+    DisplayImageOptions options = new DisplayImageOptions.Builder()
+            .showImageOnLoading(R.mipmap.ic_launcher)
+            .showImageOnFail(R.mipmap.ic_launcher)
+            .cacheInMemory(true)
+            .cacheOnDisk(true)
+            .bitmapConfig(Bitmap.Config.RGB_565)
+            .build();
+
+        return options;
+}
 
     @Override
     protected void onDestroy() {

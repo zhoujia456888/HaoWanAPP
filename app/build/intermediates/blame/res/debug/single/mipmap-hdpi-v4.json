@@ -4,6 +4,10 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_beauty.png"
     },
     {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_notepad.png",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_notepad.png"
+    },
+    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\ic_drafts_black_24dp.png",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\mipmap-hdpi\\ic_drafts_black_24dp.png"
     },

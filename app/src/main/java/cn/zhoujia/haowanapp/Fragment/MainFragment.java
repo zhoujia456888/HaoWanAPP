@@ -1,7 +1,9 @@
 package cn.zhoujia.haowanapp.Fragment;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.SearchView;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -25,7 +27,7 @@ import com.baidu.apistore.sdk.network.Parameters;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.google.gson.Gson;
-import com.squareup.picasso.Picasso;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import org.json.JSONException;
 
@@ -34,6 +36,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.zhoujia.haowanapp.Activity.BaseActivity;
 import cn.zhoujia.haowanapp.Activity.MainActivity;
 import cn.zhoujia.haowanapp.Adapter.WeatherDailyAdapter;
 import cn.zhoujia.haowanapp.Adapter.WeatherHourlyAdapter;
@@ -255,6 +258,32 @@ public class MainFragment extends Fragment {
                 .setHintTextColor(getResources().getColor(R.color.nliveo_white));
         searchView.setOnQueryTextListener(onQuerySearchView);
 
+        //监控当searchView关闭时调用事件
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            MenuItemCompat.setOnActionExpandListener(menuItem,
+                    new MenuItemCompat.OnActionExpandListener() {
+                        @Override
+                        public boolean onMenuItemActionExpand(MenuItem menuItem) {
+                            return true;
+                        }
+
+                        @Override
+                        public boolean onMenuItemActionCollapse(MenuItem menuItem) {
+//                            locationService.start();
+                            rotateHeaderWebViewFrame.autoRefresh();
+                            return true;
+                        }
+                    });
+        } else {
+            searchView.setOnCloseListener(new SearchView.OnCloseListener() {
+                @Override
+                public boolean onClose() {
+                    rotateHeaderWebViewFrame.autoRefresh();
+//                    locationService.start();;
+                    return false;
+                }
+            });
+        }
         mSearchCheck = false;
     }
 
@@ -287,6 +316,7 @@ public class MainFragment extends Fragment {
             }
             return false;
         }
+
     };
 
     /*****
@@ -358,7 +388,7 @@ public class MainFragment extends Fragment {
             suggestionEntity = weatherdataServiceEntity.getSuggestion();
 
             txtWeatherCity.setText(basicEntity.getCity().toString());
-            Picasso.with(this.getActivity()).load("http://files.heweather.com/cond_icon/" + nowEntity.getCond().getCode() + ".png").into(imgWeathr);
+            ImageLoader.getInstance().displayImage("http://files.heweather.com/cond_icon/" + nowEntity.getCond().getCode() + ".png", imgWeathr, BaseActivity.displayImageOptions());
             weatherDeta.setText(nowEntity.getCond().getTxt());
             weatherTemperature.setText(nowEntity.getTmp() + " ℃");
             txtAqiqlty.setText(aqiEntity.getCity().getQlty());

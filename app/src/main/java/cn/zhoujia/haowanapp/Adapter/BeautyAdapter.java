@@ -13,12 +13,13 @@ import android.widget.TextView;
 
 import com.balysv.materialripple.MaterialRippleLayout;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
-import com.squareup.picasso.Picasso;
+import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import cn.zhoujia.haowanapp.Activity.BaseActivity;
 import cn.zhoujia.haowanapp.Bean.BeautyBean.TngouEntity;
 import cn.zhoujia.haowanapp.R;
 
@@ -51,7 +52,7 @@ public class BeautyAdapter extends XRecyclerView.Adapter<BeautyAdapter.ViewHolde
         holder.imgBeauty.setImageResource(R.drawable.ic_launcher);
         // 通过 tag 来防止图片错位
         if (holder.imgBeauty.getTag() != null && holder.imgBeauty.getTag().equals(imgUrl)) {
-            Picasso.with(mcontext).load("http://tnfs.tngou.net/img/" + tngouEntityList.get(position).getImg()).into(holder.imgBeauty);
+            ImageLoader.getInstance().displayImage("http://tnfs.tngou.net/img/" + tngouEntityList.get(position).getImg(), holder.imgBeauty, BaseActivity.displayImageOptions());
         }
         holder.txtBeauty.setText(tngouEntityList.get(position).getTitle().toString());
         holder.imgBeauty.setOnClickListener(new View.OnClickListener() {
@@ -63,12 +64,6 @@ public class BeautyAdapter extends XRecyclerView.Adapter<BeautyAdapter.ViewHolde
             }
         });
     }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
     @Override
     public int getItemCount() {
         return tngouEntityList.size();

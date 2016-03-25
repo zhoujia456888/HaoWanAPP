@@ -49,6 +49,10 @@
     <init>();
 }
 
+-keep class cn.zhoujia.haowanapp.Activity.NotePadActivity {
+    <init>();
+}
+
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }

@@ -16,6 +16,7 @@
 
 package br.liveo.navigationliveo;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.res.Configuration;
@@ -34,11 +35,15 @@ import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -128,6 +133,11 @@ public abstract class NavigationActionBarLiveo extends AppCompatActivity {
         mList.setOnItemClickListener(new DrawerItemClickListener());
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+//        mToolbar.setTitle("");
+//        setSupportActionBar(mToolbar);
+       // ColourStatusBar(this);
+
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 
         mDrawerToggle = new ActionBarDrawerToggleCompat(this, mDrawerLayout, mToolbar);
@@ -1444,5 +1454,35 @@ public abstract class NavigationActionBarLiveo extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+    }
+    //变色状态栏
+    public static void ColourStatusBar(Activity activity) {
+        initSystemBar(activity);
+        setTranslucentStatus(activity, true);
+    }
+
+    //变色状态栏
+    public static void initSystemBar(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            setTranslucentStatus(activity, true);
+        }
+        SystemBarTintManager tintManager = new SystemBarTintManager(activity);
+        tintManager.setStatusBarTintEnabled(true);
+        // 使用颜色资源
+        tintManager.setStatusBarTintResource(R.color.nliveo_blue_colorPrimaryDark);
+    }
+
+    @TargetApi(19)
+    private static void setTranslucentStatus(Activity activity, boolean on) {
+        Window win = activity.getWindow();
+        WindowManager.LayoutParams winParams = win.getAttributes();
+        final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
+        if (on) {
+            winParams.flags |= bits;
+        } else {
+            winParams.flags &= ~bits;
+        }
+        win.setAttributes(winParams);
+
     }
 }

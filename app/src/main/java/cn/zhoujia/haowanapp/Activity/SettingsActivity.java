@@ -17,7 +17,7 @@ public class SettingsActivity extends BaseActivity{
         setContentView(R.layout.activity_setting);
         //设置toolbar标题为空
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
-        toolbar.setTitle("");
+        toolbar.setTitle(getString(R.string.setting));
         setSupportActionBar(toolbar);
         //返回按键
         toolbar.setNavigationIcon(R.mipmap.ic_action_back);

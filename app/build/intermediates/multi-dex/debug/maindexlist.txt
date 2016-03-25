@@ -9,6 +9,7 @@ cn/zhoujia/haowanapp/Activity/selectcity/MyLetterListView.class
 butterknife/OnTextChanged$Callback.class
 com/afollestad/materialdialogs/DialogAction.class
 android/support/v4/view/GravityCompat.class
+cn/zhoujia/haowanapp/greendao/DaoMaster$DevOpenHelper.class
 android/support/v7/widget/RecyclerView$3.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/BallScaleRippleIndicator.class
 butterknife/OnFocusChange.class
@@ -21,6 +22,7 @@ butterknife/internal/ListenerMethod.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/LineScalePulseOutIndicator.class
 android/support/design/widget/TabLayout$TabLayoutOnPageChangeListener.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$HitCityAdapter.class
+cn/zhoujia/haowanapp/Fragment/NotepadFragment.class
 butterknife/OnClick.class
 android/support/v4/view/ViewCompatGingerbread.class
 android/support/v4/media/session/MediaSessionCompat$ResultReceiverWrapper.class
@@ -32,6 +34,7 @@ android/support/v7/widget/RecyclerView$4.class
 android/support/v4/widget/MaterialProgressDrawable$2.class
 cn/zhoujia/haowanapp/Activity/selectcity/DatabaseHelper.class
 android/support/v4/view/MotionEventCompat.class
+cn/zhoujia/haowanapp/Utils/DataBaseUtil.class
 android/support/v7/widget/AdapterHelper$Callback.class
 com/baidu/apistore/sdk/ApiStoreSDK.class
 android/support/v7/widget/LinearLayoutCompat$DividerMode.class
@@ -114,6 +117,7 @@ android/support/design/widget/AnimationUtils.class
 android/support/v4/widget/DrawerLayout.class
 android/support/v4/app/BaseFragmentActivityDonut.class
 android/support/v4/media/session/PlaybackStateCompat$1.class
+de/greenrobot/dao/AbstractDaoSession.class
 br/liveo/interfaces/OnPrepareOptionsMenuLiveo.class
 cn/zhoujia/haowanapp/Activity/MainActivity.class
 android/support/v4/app/Fragment$InstantiationException.class
@@ -127,8 +131,8 @@ android/support/design/widget/CoordinatorLayout$HierarchyChangeListener.class
 android/support/v7/widget/RecyclerView$AdapterDataObservable.class
 com/afollestad/materialdialogs/MaterialDialog.class
 android/support/v7/widget/RecyclerView.class
-android/support/v7/widget/LinearLayoutCompat$LayoutParams.class
 uk/co/senab/photoview/PhotoViewAttacher.class
+android/support/v7/widget/LinearLayoutCompat$LayoutParams.class
 android/support/v4/app/BackStackRecord.class
 android/support/v7/widget/RecyclerView$Adapter.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$2.class
@@ -137,6 +141,7 @@ android/support/v7/app/ActionBar$OnMenuVisibilityListener.class
 android/support/v7/app/AppCompatCallback.class
 com/afollestad/materialdialogs/commons/R$id.class
 com/jcodecraeer/xrecyclerview/R.class
+com/nostra13/universalimageloader/core/ImageLoaderConfiguration$Builder.class
 android/support/design/widget/ViewGroupUtils.class
 android/support/v4/view/VelocityTrackerCompat.class
 android/support/v4/app/FragmentActivity$HostCallbacks.class
@@ -149,7 +154,6 @@ android/support/v4/view/animation/LookupTableInterpolator.class
 android/support/v4/util/ContainerHelpers.class
 android/support/v4/widget/DrawerLayoutImpl.class
 android/support/v4/app/LoaderManager.class
-com/squareup/picasso/Picasso.class
 com/afollestad/materialdialogs/commons/R.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/BallClipRotateIndicator.class
 android/support/v7/widget/RecyclerView$ViewCacheExtension.class
@@ -159,6 +163,7 @@ android/support/v4/view/WindowInsetsCompat.class
 android/support/annotation/RawRes.class
 android/support/v4/view/ViewCompatEclairMr1.class
 android/support/v7/app/AppCompatActivity.class
+com/nostra13/universalimageloader/core/ImageLoader.class
 android/support/v4/media/session/PlaybackStateCompat$State.class
 com/baidu/mapapi/navi/BaiduMapNavigation.class
 android/support/v4/view/ViewCompatJB.class
@@ -182,10 +187,11 @@ android/support/annotation/IdRes.class
 br/liveo/navigationliveo/NavigationLiveo$DrawerItemClickListener.class
 android/support/v4/view/NestedScrollingParentHelper.class
 android/support/annotation/UiThread.class
-android/support/annotation/IntDef.class
 android/support/v4/widget/SimpleCursorAdapter.class
+android/support/annotation/IntDef.class
 br/liveo/interfaces/OnItemClickListener.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$ResultListAdapter.class
+cn/zhoujia/haowanapp/greendao/Notepad.class
 android/support/v4/media/VolumeProviderCompatApi21.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/PacmanIndicator.class
 android/support/v4/view/ViewPager$OnPageChangeListener.class
@@ -205,8 +211,8 @@ android/support/v4/media/session/MediaSessionCompat$SessionFlags.class
 com/google/gson/annotations/Until.class
 android/support/v4/widget/MaterialProgressDrawable$1.class
 android/support/v4/view/ViewCompat$JBViewCompatImpl.class
-android/support/design/widget/SnackbarManager.class
 android/support/annotation/ColorInt.class
+android/support/design/widget/SnackbarManager.class
 android/support/design/widget/Snackbar$7.class
 com/afollestad/materialdialogs/color/CircleView.class
 android/support/v7/appcompat/R$attr.class
@@ -217,10 +223,11 @@ android/support/design/widget/Snackbar$Duration.class
 android/support/v7/app/ActionBarActivity.class
 android/support/v4/app/FragmentContainer.class
 butterknife/OnCheckedChanged.class
+com/nostra13/universalimageloader/core/DisplayImageOptions$Builder.class
 android/support/v4/view/ViewCompatMarshmallow.class
 android/support/design/widget/ViewUtils.class
-android/support/annotation/DimenRes.class
 android/support/design/widget/CoordinatorLayout$OnPreDrawListener.class
+android/support/annotation/DimenRes.class
 android/support/v4/media/MediaBrowserCompat$MediaBrowserImplBase.class
 cn/zhoujia/haowanapp/Activity/selectcity/DBHelper.class
 android/support/v7/widget/RecyclerView$5.class
@@ -233,6 +240,7 @@ android/support/v4/media/MediaBrowserCompat$MediaItem$1.class
 android/support/v7/widget/RecyclerView$ItemAnimator.class
 android/support/v4/app/FragmentManagerImpl$FragmentTag.class
 android/support/v4/app/TaskStackBuilder$SupportParentable.class
+cn/zhoujia/haowanapp/greendao/DaoMaster.class
 android/support/annotation/RequiresPermission$Read.class
 android/support/v4/media/session/PlaybackStateCompat.class
 android/support/design/widget/CoordinatorLayoutInsetsHelperLollipop.class
@@ -251,8 +259,8 @@ android/support/annotation/Keep.class
 android/support/v4/media/RatingCompat.class
 android/support/design/widget/TabLayout.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
-android/support/v7/widget/RecyclerView$LayoutParams.class
 com/afollestad/materialdialogs/DialogBase.class
+android/support/v7/widget/RecyclerView$LayoutParams.class
 android/support/v4/app/FragmentHostCallback.class
 android/support/v4/content/PermissionChecker.class
 cn/zhoujia/haowanapp/Fragment/BeautyFragment.class
@@ -262,11 +270,11 @@ android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 cn/zhoujia/haowanapp/Utils/NetUtils.class
 android/support/v4/app/ActivityCompat$OnRequestPermissionsResultCallback.class
 butterknife/OnTextChanged.class
+de/greenrobot/dao/AbstractDaoMaster.class
 android/support/v7/app/ActionBar$OnNavigationListener.class
 com/romainpiel/shimmer/Shimmer.class
 butterknife/OnItemLongClick.class
 butterknife/internal/ListenerClass$NONE.class
-com/squareup/picasso/Downloader$Response.class
 android/support/v4/widget/EdgeEffectCompat.class
 android/support/v7/widget/ViewInfoStore$ProcessCallback.class
 android/support/v4/media/session/PlaybackStateCompatApi21.class
@@ -392,6 +400,7 @@ android/support/v4/media/session/PlaybackStateCompatApi22.class
 br/liveo/navigationliveo/NavigationLiveo$1.class
 android/support/v4/media/MediaBrowserCompat$MediaItem$Flags.class
 android/support/annotation/MenuRes.class
+cn/zhoujia/haowanapp/Activity/NotePadActivity$1.class
 android/support/design/widget/TabLayout$1.class
 android/support/v4/view/ScrollingView.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorListener.class
@@ -428,6 +437,7 @@ android/support/v4/view/ViewCompatJellybeanMr1.class
 br/liveo/adapter/NavigationLiveoAdapter.class
 com/romainpiel/shimmer/ShimmerTextView.class
 android/support/v4/graphics/drawable/DrawableCompat.class
+cn/zhoujia/haowanapp/greendao/DaoSession.class
 android/support/annotation/StyleableRes.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/LineScaleIndicator.class
 cn/zhoujia/haowanapp/MyApplication.class
@@ -441,7 +451,6 @@ android/support/v4/view/NestedScrollingChildHelper.class
 android/support/v7/widget/StaggeredGridLayoutManager.class
 android/support/v4/view/ViewCompat$KitKatViewCompatImpl.class
 android/support/v4/util/ArrayMap$1.class
-com/squareup/picasso/RequestCreator.class
 android/support/design/R$styleable.class
 android/support/design/widget/FloatingActionButton.class
 android/support/v7/widget/RecyclerView$RecycledViewPool.class
@@ -451,8 +460,8 @@ android/support/design/widget/AppBarLayout$Behavior$1.class
 android/support/v4/widget/SlidingPaneLayout.class
 org/hybridsquad/android/library/CropHandler.class
 com/baidu/location/i/i.class
-android/support/v4/view/AccessibilityDelegateCompat.class
 com/afollestad/materialdialogs/MaterialDialog$Builder.class
+android/support/v4/view/AccessibilityDelegateCompat.class
 android/support/v4/widget/CursorAdapter.class
 android/support/design/widget/AppBarLayout$LayoutParams.class
 com/afollestad/materialdialogs/color/ColorChooserDialog$1.class
@@ -460,6 +469,7 @@ android/support/v4/content/ContextCompat.class
 com/baidu/mapapi/SDKInitializer.class
 android/support/design/widget/AppBarLayout$Behavior.class
 com/jcodecraeer/xrecyclerview/progressindicator/AVLoadingIndicatorView.class
+com/nostra13/universalimageloader/core/DisplayImageOptions.class
 com/baidu/mapapi/search/route/DrivingRouteLine.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorFinishedListener.class
 android/support/v7/widget/ChildHelper.class
@@ -470,6 +480,7 @@ android/support/design/widget/AppBarLayout$Behavior$SavedState.class
 android/support/v4/app/BaseFragmentActivityHoneycomb.class
 com/afollestad/materialdialogs/internal/MDButton.class
 android/support/annotation/TransitionRes.class
+com/nostra13/universalimageloader/utils/L.class
 cn/zhoujia/haowanapp/Activity/UserDetailInfo$6.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class
@@ -520,6 +531,7 @@ cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$1.class
 android/support/design/widget/CoordinatorLayout$Behavior.class
 android/support/v7/app/ActionBar.class
 cn/zhoujia/haowanapp/Activity/UserDetailInfo$2.class
+cn/zhoujia/haowanapp/Activity/NotePadActivity.class
 android/support/design/widget/ValueAnimatorCompat$AnimatorUpdateListener.class
 android/support/design/widget/Snackbar$Behavior.class
 android/support/v4/app/ActivityCompatApi23.class
@@ -535,7 +547,6 @@ android/support/design/widget/TabLayout$Tab.class
 android/support/annotation/ArrayRes.class
 android/support/v7/widget/RecyclerView$SavedState.class
 android/support/annotation/StyleRes.class
-com/squareup/picasso/Picasso$Builder.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplApi21.class
 android/support/v4/view/animation/FastOutSlowInInterpolator.class
 android/support/v7/widget/RecyclerView$ViewFlinger.class
@@ -544,9 +555,12 @@ android/support/design/widget/HeaderBehavior$FlingRunnable.class
 cn/zhoujia/haowanapp/Activity/selectcity/SelectCity$5.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/BaseIndicatorController$AnimStatus.class
 android/support/v4/media/VolumeProviderCompat$Callback.class
+cn/zhoujia/haowanapp/greendao/DaoMaster$OpenHelper.class
 android/support/v4/media/session/MediaControllerCompat.class
 com/jcodecraeer/xrecyclerview/progressindicator/indicator/CubeTransitionIndicator.class
 android/support/v4/app/ActivityCompatHoneycomb.class
+com/nostra13/universalimageloader/core/ImageLoaderConfiguration.class
+br/liveo/navigationliveo/R$color.class
 android/support/v4/app/FragmentActivity$NonConfigurationInstances.class
 android/support/design/widget/ViewOffsetBehavior.class
 butterknife/BindInt.class

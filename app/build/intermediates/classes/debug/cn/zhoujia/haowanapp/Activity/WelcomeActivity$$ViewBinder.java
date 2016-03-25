@@ -8,8 +8,8 @@ import butterknife.ButterKnife.ViewBinder;
 public class WelcomeActivity$$ViewBinder<T extends cn.zhoujia.haowanapp.Activity.WelcomeActivity> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558562, "field 'shimmerAppname' and method 'onClick'");
-    target.shimmerAppname = finder.castView(view, 2131558562, "field 'shimmerAppname'");
+    view = finder.findRequiredView(source, 2131558563, "field 'shimmerAppname' and method 'onClick'");
+    target.shimmerAppname = finder.castView(view, 2131558563, "field 'shimmerAppname'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(
@@ -18,8 +18,8 @@ public class WelcomeActivity$$ViewBinder<T extends cn.zhoujia.haowanapp.Activity
           target.onClick(p0);
         }
       });
-    view = finder.findRequiredView(source, 2131558563, "field 'hintWelcome' and method 'onClick'");
-    target.hintWelcome = finder.castView(view, 2131558563, "field 'hintWelcome'");
+    view = finder.findRequiredView(source, 2131558564, "field 'hintWelcome' and method 'onClick'");
+    target.hintWelcome = finder.castView(view, 2131558564, "field 'hintWelcome'");
     view.setOnClickListener(
       new butterknife.internal.DebouncingOnClickListener() {
         @Override public void doClick(

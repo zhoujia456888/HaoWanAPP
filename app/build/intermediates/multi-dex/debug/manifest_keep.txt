@@ -10,6 +10,7 @@
 -keep class cn.zhoujia.haowanapp.Activity.SettingsActivity { <init>(); }
 -keep class cn.zhoujia.haowanapp.Activity.selectcity.SelectCity { <init>(); }
 -keep class cn.zhoujia.haowanapp.Activity.ImageShower { <init>(); }
+-keep class cn.zhoujia.haowanapp.Activity.NotePadActivity { <init>(); }
 -keep public class * extends android.app.backup.BackupAgent {
     <init>();
 }

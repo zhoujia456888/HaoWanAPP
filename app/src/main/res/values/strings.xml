@@ -16,7 +16,11 @@
     <string name="joke_page">笑话</string>
     <string name="beauty_page">美女</string>
     <string name="translate_page">翻译</string>
+    <string name="notepad_page">记事本</string>
     <string name="translate_content_hint">请在此输入需要翻译的内容</string>
+
+    <string name="delete">删除</string>
+    <string name="delete_note_info">确定要删除这条记事？</string>
 
     <!--用户详情-->
     <string name="userdatailinfo">用户详情</string>

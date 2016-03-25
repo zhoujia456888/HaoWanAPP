@@ -1,1 +1,1 @@
-include ':app', ':photoCropper', ':photocropper', ':NavigationDrawer', ':xrecyclerview', ':NiceSpinner'
+include ':app', ':photoCropper', ':photocropper', ':NavigationDrawer', ':xrecyclerview', ':NiceSpinner', ':mydaogenerator'

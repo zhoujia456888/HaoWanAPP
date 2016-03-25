@@ -54,6 +54,7 @@
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.WelcomeActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,19 +65,29 @@
         <activity android:name="cn.zhoujia.haowanapp.Activity.BaseActivity" />
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/nLiveoDrawer" />
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.UserDetailInfo"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.SettingsActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.selectcity.SelectCity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="cn.zhoujia.haowanapp.Activity.ImageShower"
+            android:screenOrientation="portrait"
             android:theme="@style/ImageScale" />
+        <activity
+            android:name="cn.zhoujia.haowanapp.Activity.NotePadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
     </application>
 
 </manifest>

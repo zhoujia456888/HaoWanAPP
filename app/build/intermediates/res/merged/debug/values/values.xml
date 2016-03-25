@@ -547,6 +547,8 @@
     <string name="cube_ptr_seconds_ago"> seconds ago</string>
     <string name="custom_header_not_created">Custom header was not created</string>
     <string name="define_roundedimageview"/>
+    <string name="delete">删除</string>
+    <string name="delete_note_info">确定要删除这条记事？</string>
     <string name="drawer_close">Navigation drawer Close</string>
     <string name="drawer_open">Open drawer navigation</string>
     <string name="edit_nickname">请填写用户昵称</string>
@@ -585,6 +587,7 @@
     <string name="neterror">网络错误</string>
     <string name="neterrorinfo">检测到你目前尚未连接网络</string>
     <string name="nomore_loading">no more to be loaded</string>
+    <string name="notepad_page">记事本</string>
     <string name="ok">确定</string>
     <string name="personal_birth">出生日期</string>
     <string name="personal_nickname">昵称</string>
@@ -619,8 +622,9 @@
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
 		<!-- Customize your theme here. -->
-		<item name="colorPrimary">#2196F3</item>
-		<item name="colorAccent">#F79B14</item>
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
 	</style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.NoActionBar">
