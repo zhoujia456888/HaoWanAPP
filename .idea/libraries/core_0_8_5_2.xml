@@ -5,6 +5,8 @@
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.afollestad.material-dialogs/core/0.8.5.2/f12396a8bb6b244484b91753f3dc47eec0ffbd7a/core-0.8.5.2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

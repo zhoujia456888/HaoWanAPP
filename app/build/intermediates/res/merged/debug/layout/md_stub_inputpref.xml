@@ -24,4 +24,4 @@
         android:layout_gravity="center_horizontal"
         tools:ignore="UnusedAttribute" />
 
-</LinearLayout><!-- From: file:/home/jitpack/build/commons/src/main/res/layout/md_stub_inputpref.xml -->
+</LinearLayout>
