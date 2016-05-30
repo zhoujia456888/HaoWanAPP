@@ -41,3 +41,4 @@ captures/
 .idea
 app/src/main/java/cn/zhoujia/haowanapp/Method/
 mydaogenerator/libs/
+.gitignore

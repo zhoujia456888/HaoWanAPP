@@ -21,4 +21,4 @@
         android:layout_height="wrap_content"
         android:indeterminate="true" />
 
-</merge>
+</merge><!-- From: file:/home/jitpack/build/core/src/main/res/layout-v14/md_stub_progress_indeterminate_horizontal.xml -->

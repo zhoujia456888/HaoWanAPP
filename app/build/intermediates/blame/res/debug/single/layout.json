@@ -4,24 +4,24 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_listitem_multichoice.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\total_item.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\total_item.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_list_drawer.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_list_drawer.xml"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\total_item.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\total_item.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_list_drawer.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_list_drawer.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
@@ -44,12 +44,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\imageshower.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_progress.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_dialog_progress.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -64,12 +64,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_main_actionbar_dark.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_listitem.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_listitem.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_city.xml",
@@ -96,20 +96,20 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\activity_userdatailinfo.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_preference_custom.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\commons\\0.8.5.2\\res\\layout\\md_preference_custom.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple.xml"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_hourly_forecast_gridview.xml",
@@ -148,12 +148,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_beautymulti.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\item_beautymulti.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_stub_actionbuttons.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_stub_actionbuttons.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_beautymulti.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\item_beautymulti.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
@@ -180,20 +180,20 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_list_footer.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
@@ -236,12 +236,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_progress_indeterminate_horizontal.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_dialog_progress_indeterminate_horizontal.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_list.xml",
@@ -256,20 +256,20 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\commons\\0.8.5.2\\res\\layout\\md_stub_inputpref.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_main_light.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_main_light.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_colorchooser.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\commons\\0.8.5.2\\res\\layout\\md_dialog_colorchooser.xml"
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_main_light.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_main_light.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_colorchooser.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\commons\\0.8.5.2\\res\\layout\\md_dialog_colorchooser.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
@@ -280,24 +280,24 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\layout\\md_dialog_progress_indeterminate.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_header.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.jcodecraeer\\xrecyclerview\\1.2.6\\res\\layout\\listview_header.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_head.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.jcodecraeer\\xrecyclerview\\1.2.6\\res\\layout\\pull_to_refresh_head.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_header.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.jcodecraeer\\xrecyclerview\\1.2.6\\res\\layout\\listview_header.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notepadcontext.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\activity_notepadcontext.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.1.1\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_notepadcontext.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\activity_notepadcontext.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\md_dialog_custom.xml",
@@ -336,12 +336,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\fragment_shenzt.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cube_ptr_classic_default_header.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\in.srain.cube\\ultra-ptr\\1.0.11\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_selectvity.xml",
@@ -368,12 +368,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\commons\\0.8.5.2\\res\\layout\\md_stub_colorchooser_custom.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_container.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\HaoWanAPP\\NavigationDrawer\\unspecified\\res\\layout\\navigation_container.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\navigation_list_header.xml",
@@ -396,12 +396,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\layout\\item_daily_forecast_gridview.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\layout\\cube_ptr_simple_loading.xml",

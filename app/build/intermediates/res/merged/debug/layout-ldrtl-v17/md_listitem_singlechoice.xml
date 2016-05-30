@@ -29,11 +29,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:button="@drawable/abc_btn_radio_material"
-        android:background="@null"
         android:clickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
         android:gravity="center_vertical"
         android:minHeight="@dimen/md_listitem_height" />
 
-</LinearLayout>
+</LinearLayout><!-- From: file:/home/jitpack/build/core/src/main/res/layout-ldrtl/md_listitem_singlechoice.xml -->

@@ -16,7 +16,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:button="@drawable/abc_btn_radio_material"
-        android:background="@null"
         android:clickable="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
@@ -36,4 +35,4 @@
         tools:ignore="NewApi,RtlSymmetry"
         tools:text="Item" />
 
-</LinearLayout>
+</LinearLayout><!-- From: file:/home/jitpack/build/core/src/main/res/layout/md_listitem_singlechoice.xml -->

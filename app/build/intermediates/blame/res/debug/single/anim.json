@@ -16,12 +16,12 @@
         "source": "E:\\ASWorkspace\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.0\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\anim\\fade_in.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\decelerate_cubic.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\anim\\decelerate_cubic.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\anim\\fade_in.xml"
     },
     {
         "merged": "E:\\ASWorkspace\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
@@ -36,12 +36,12 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\anim\\fade_out.xml"
     },
     {
-        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popup_exit.xml",
-        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\anim\\popup_exit.xml"
-    },
-    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popup_exit.xml",
+        "source": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\exploded-aar\\com.github.afollestad.material-dialogs\\core\\0.8.5.2\\res\\anim\\popup_exit.xml"
     },
     {
         "merged": "E:\\ASWorkspace\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",

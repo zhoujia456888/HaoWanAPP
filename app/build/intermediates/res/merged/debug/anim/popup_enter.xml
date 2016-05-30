@@ -6,4 +6,4 @@
         android:toAlpha="1.0"
         android:interpolator="@anim/decelerate_cubic"
         android:duration="150" />
-</set>
+</set><!-- From: file:/home/jitpack/build/core/src/main/res/anim/popup_enter.xml -->

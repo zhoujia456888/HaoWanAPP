@@ -26,7 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
             android:layout_marginRight="2dp"
-            android:digits="0123456789abcdefABCDEF"
             android:text="#"
             android:textColor="?android:textColorPrimary"
             android:textColorHint="?android:textColorSecondary"
@@ -227,4 +226,4 @@
 
     </RelativeLayout>
 
-</LinearLayout>
+</LinearLayout><!-- From: file:/home/jitpack/build/commons/src/main/res/layout/md_stub_colorchooser_custom.xml -->

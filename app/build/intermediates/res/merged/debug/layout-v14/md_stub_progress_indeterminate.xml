@@ -26,8 +26,8 @@
         android:paddingLeft="16dp"
         android:paddingStart="16dp"
         android:textAlignment="viewStart"
-        android:textSize="@dimen/md_content_textsize"
+        android:textSize="16sp"
         tools:ignore="NewApi,RtlSymmetry,UnusedAttribute"
         tools:text="Message" />
 
-</LinearLayout>
+</LinearLayout><!-- From: file:/home/jitpack/build/core/src/main/res/layout-v14/md_stub_progress_indeterminate.xml -->
