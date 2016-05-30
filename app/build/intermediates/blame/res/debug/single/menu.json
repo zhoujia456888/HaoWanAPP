@@ -4,6 +4,14 @@
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
+        "merged": "E:\\ASWorkspace\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\notepadmenu.xml",
+        "source": "E:\\ASWorkspace\\HaoWanAPP\\app\\src\\main\\res\\menu\\notepadmenu.xml"
+    },
+    {
+        "merged": "E:\\ASWorkspace\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu.xml",
+        "source": "E:\\ASWorkspace\\HaoWanAPP\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
         "merged": "E:\\Android\\HaoWanAPP\\app\\build\\intermediates\\res\\merged\\debug\\menu\\notepadmenu.xml",
         "source": "E:\\Android\\HaoWanAPP\\app\\src\\main\\res\\menu\\notepadmenu.xml"
     }

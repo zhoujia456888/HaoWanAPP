@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
-    <!-- From: file:/home/jitpack/build/core/src/main/res/values/attrs.xml -->
-    <eat-comment/>
     <attr format="color" name="md_background_color"/>
     <attr format="reference" name="md_btn_negative_selector"/>
     <attr format="reference" name="md_btn_neutral_selector"/>
@@ -50,11 +48,7 @@
         <enum name="end" value="2"/>
     </attr>
     <attr format="color" name="md_widget_color"/>
-    <!-- From: file:/home/jitpack/build/core/src/main/res/values/bool.xml -->
-    <eat-comment/>
     <bool name="md_is_tablet">false</bool>
-    <!-- From: file:/home/jitpack/build/core/src/main/res/values/colors.xml -->
-    <eat-comment/>
     <color name="md_btn_selected">#33969696</color>
     <color name="md_btn_selected_dark">#40CBCBCB</color>
     <color name="md_divider_black">#10000000</color>
@@ -63,8 +57,6 @@
     <color name="md_material_blue_600">#1E88E5</color>
     <color name="md_material_blue_800">#1565C0</color>
     <declare-styleable name="MDRootLayout"><attr format="boolean" name="md_reduce_padding_no_title_no_buttons"/></declare-styleable>
-    <!-- From: file:/home/jitpack/build/core/src/main/res/values/dimens.xml -->
-    <eat-comment/>
     <dimen name="circular_progress_border">4dp</dimen>
     <dimen name="md_action_corner_radius">2dp</dimen>
     <dimen name="md_bg_corner_radius">2dp</dimen>
@@ -98,8 +90,6 @@
     <dimen name="md_title_frame_margin_bottom">12dp</dimen>
     <dimen name="md_title_frame_margin_bottom_less">6dp</dimen>
     <dimen name="md_title_textsize">20sp</dimen>
-    <!-- From: file:/home/jitpack/build/core/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="MD_ActionButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">@dimen/md_button_height</item>

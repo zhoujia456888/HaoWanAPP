@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/md_btn_selected" android:state_pressed="true" />
     <item android:drawable="@drawable/md_transparent" />
 
-</selector><!-- From: file:/home/jitpack/build/core/src/main/res/drawable/md_btn_selector.xml -->
+</selector>

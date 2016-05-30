@@ -31,4 +31,4 @@
         android:textSize="@dimen/md_simplelist_textsize"
         tools:text="Title" />
 
-</LinearLayout><!-- From: file:/home/jitpack/build/commons/src/main/res/layout/md_simplelist_item.xml -->
+</LinearLayout>

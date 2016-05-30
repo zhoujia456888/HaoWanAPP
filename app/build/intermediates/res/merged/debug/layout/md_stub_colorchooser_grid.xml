@@ -11,4 +11,4 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:stretchMode="columnWidth"
-    android:verticalSpacing="8dp" /><!-- From: file:/home/jitpack/build/commons/src/main/res/layout/md_stub_colorchooser_grid.xml -->
+    android:verticalSpacing="8dp" />
