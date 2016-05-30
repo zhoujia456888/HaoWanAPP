@@ -25,6 +25,7 @@ import cn.zhoujia.haowanapp.Fragment.BeautyFragment;
 import cn.zhoujia.haowanapp.Fragment.JokeFragment;
 import cn.zhoujia.haowanapp.Fragment.MainFragment;
 import cn.zhoujia.haowanapp.Fragment.NotepadFragment;
+import cn.zhoujia.haowanapp.Fragment.ShenZTFragment;
 import cn.zhoujia.haowanapp.Fragment.TranslateFragment;
 import cn.zhoujia.haowanapp.MyApplication;
 import cn.zhoujia.haowanapp.R;
@@ -65,10 +66,11 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         //mHelpLiveo.addSubHeader(getString(R.string.classify)); //Item subHeader ITEM分类小标题
         mHelpLiveo.add(getString(R.string.beauty_page), R.mipmap.ic_beauty);
         mHelpLiveo.add(getString(R.string.joke_page), R.mipmap.ic_joke);
-        mHelpLiveo.add(getString(R.string.translate_page),R.mipmap.ic_translate);
-        mHelpLiveo.add(getString(R.string.notepad_page),R.mipmap.ic_notepad);
+        mHelpLiveo.add(getString(R.string.translate_page), R.mipmap.ic_translate);
+        mHelpLiveo.add(getString(R.string.notepad_page), R.mipmap.ic_notepad);
+        /*mHelpLiveo.add(getString(R.string.shenzt_page), R.mipmap.ic_notepad);*/
 
-                mHelpLiveo.addSeparator(); // Item separator//分割线
+        mHelpLiveo.addSeparator(); // Item separator//分割线
 
         with(this).startingPosition(0).addAllHelpItem(mHelpLiveo.getHelp())
                 .colorItemSelected(R.color.nliveo_blue_colorPrimary)
@@ -88,9 +90,9 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
         SharedPreferences sp = getSharedPreferences("userinfo", MODE_PRIVATE);
         this.userName.setText(sp.getString("nickname", "").toString().trim());
         this.userEmail.setText(sp.getString("phone", "").toString().trim());
-        imagestr=sp.getString("userphotouri", "1////1").toString().trim();
-        File file  = new File(imagestr.split("///")[1]);
-        if (!file .exists()) {
+        imagestr = sp.getString("userphotouri", "1////1").toString().trim();
+        File file = new File(imagestr.split("///")[1]);
+        if (!file.exists()) {
             this.userPhoto.setImageResource(R.mipmap.ic_launcher);
         } else {
             this.userPhoto.setImageBitmap(BitmapUtil.decodeUriAsBitmap(this, Uri.parse(imagestr)));
@@ -102,8 +104,8 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
     public void onItemClick(int position) {
         Fragment mFragment;
         FragmentManager mFragmentManager = getSupportFragmentManager();
-        windowManager=getWindowManager();
-        activity=MainActivity.this;
+        windowManager = getWindowManager();
+        activity = MainActivity.this;
 
         switch (position) {
             case 0:
@@ -126,6 +128,10 @@ public class MainActivity extends NavigationLiveo implements OnItemClickListener
                 mFragment = NotepadFragment.newInstance(mHelpLiveo.get(position).getName());
                 NavigationLiveo.mToolbar.setTitle(getString(R.string.notepad_page));
                 break;
+            /*case 5:
+                mFragment = ShenZTFragment.newInstance(mHelpLiveo.get(position).getName());
+                NavigationLiveo.mToolbar.setTitle(getString(R.string.shenzt_page));
+                break;*/
 
             default:
                 mFragment = MainFragment.newInstance(mHelpLiveo.get(position).getName());

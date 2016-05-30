@@ -63,4 +63,5 @@ dependencies {
     compile 'de.greenrobot:greendao:2.0.0'
     compile project(':mydaogenerator')
     compile files('libs/universal-image-loader-1.9.5.jar')
+    compile 'com.github.zhaokaiqiang.klog:library:1.4.0'
 }

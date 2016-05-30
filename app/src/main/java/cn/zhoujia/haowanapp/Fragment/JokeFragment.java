@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,11 +17,9 @@ import com.baidu.apistore.sdk.network.Parameters;
 import com.google.gson.Gson;
 import com.jcodecraeer.xrecyclerview.ProgressStyle;
 import com.jcodecraeer.xrecyclerview.XRecyclerView;
-import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 
 import org.json.JSONException;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.Bind;

@@ -23,6 +23,7 @@ ADDED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml:6:5-67
 		ADDED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml:7:5-81
+MERGED from [com.github.zhaokaiqiang.klog:library:1.4.0] E:\Android\HaoWanAPP\app\build\intermediates\exploded-aar\com.github.zhaokaiqiang.klog\library\1.4.0\AndroidManifest.xml:11:5-81
 	android:name
 		ADDED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
@@ -287,6 +288,7 @@ MERGED from [com.wrapp.floatlabelededittext:library:0.0.6] E:\Android\HaoWanAPP\
 MERGED from [HaoWanAPP:NiceSpinner:unspecified] E:\Android\HaoWanAPP\app\build\intermediates\exploded-aar\HaoWanAPP\NiceSpinner\unspecified\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.1.1] E:\Android\HaoWanAPP\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.1.1] E:\Android\HaoWanAPP\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+MERGED from [com.github.zhaokaiqiang.klog:library:1.4.0] E:\Android\HaoWanAPP\app\build\intermediates\exploded-aar\com.github.zhaokaiqiang.klog\library\1.4.0\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
 		INJECTED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml
 		INJECTED from E:\Android\HaoWanAPP\app\src\main\AndroidManifest.xml

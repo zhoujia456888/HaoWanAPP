@@ -8,12 +8,12 @@ import butterknife.ButterKnife.ViewBinder;
 public class WeatherHourlyAdapter$ViewHolder$$ViewBinder<T extends cn.zhoujia.haowanapp.Adapter.WeatherHourlyAdapter.ViewHolder> implements ViewBinder<T> {
   @Override public void bind(final Finder finder, final T target, Object source) {
     View view;
-    view = finder.findRequiredView(source, 2131558626, "field 'txtHourlyForecastTime'");
-    target.txtHourlyForecastTime = finder.castView(view, 2131558626, "field 'txtHourlyForecastTime'");
-    view = finder.findRequiredView(source, 2131558624, "field 'txtHourlyForecastTmp'");
-    target.txtHourlyForecastTmp = finder.castView(view, 2131558624, "field 'txtHourlyForecastTmp'");
-    view = finder.findRequiredView(source, 2131558625, "field 'txtHourlyForecastWinddir'");
-    target.txtHourlyForecastWinddir = finder.castView(view, 2131558625, "field 'txtHourlyForecastWinddir'");
+    view = finder.findRequiredView(source, 2131558629, "field 'txtHourlyForecastTime'");
+    target.txtHourlyForecastTime = finder.castView(view, 2131558629, "field 'txtHourlyForecastTime'");
+    view = finder.findRequiredView(source, 2131558627, "field 'txtHourlyForecastTmp'");
+    target.txtHourlyForecastTmp = finder.castView(view, 2131558627, "field 'txtHourlyForecastTmp'");
+    view = finder.findRequiredView(source, 2131558628, "field 'txtHourlyForecastWinddir'");
+    target.txtHourlyForecastWinddir = finder.castView(view, 2131558628, "field 'txtHourlyForecastWinddir'");
   }
 
   @Override public void unbind(T target) {

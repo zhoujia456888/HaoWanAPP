@@ -557,6 +557,7 @@
     <string name="edit_phone2">请填写手机号码</string>
     <string name="edit_realname">请填写真实姓名</string>
     <string name="edit_realname_2">请填写新的真实姓名</string>
+    <string name="edit_shenztcardno">请在此输入你的深圳通卡号</string>
     <string name="end">完成</string>
     <string name="enter_item_name_position">Enter the item name position </string>
     <string name="header_not_created">Header was not created</string>
@@ -602,6 +603,7 @@
     <string name="select_city">选择城市</string>
     <string name="setting">设置</string>
     <string name="settings">设置</string>
+    <string name="shenzt_page">深圳通</string>
     <string name="sign_in">登陆</string>
     <string name="start_navigation_listener">You must start the .build(); in onInit() from your main Activity.</string>
     <string name="status_bar_notification_info_overflow">999+</string>
