@@ -38,3 +38,6 @@ captures/
 
 #Keystore files
 *.jks
+.idea
+app/src/main/java/cn/zhoujia/haowanapp/Method/
+mydaogenerator/libs/
